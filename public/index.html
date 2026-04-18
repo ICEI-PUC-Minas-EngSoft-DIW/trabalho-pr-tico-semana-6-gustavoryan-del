@@ -1,12 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>ArenaPass - Ingressos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="logo">
+            <strong><i class="fa-solid fa-ticket-simple"></i> Arena<span>Pass</span></strong>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Estádios</a></li>
+                <li><a href="#">Museus</a></li>
+                <li><a href="#">Ingressos</a></li>
+                <li><a href="#" class="btn-meus-ingressos">Meus Ingressos</a></li>
+            </ul>
+        </nav>
+        <div class="perfil-usuario">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Grandes lugares<br>Histórias inesquecíveis</h1>
+            <p>Ingressos para estádios icônicos, museus impressionantes e tours exclusivos pelo mundo.</p>
+            <p>Viva a paixão pelo esporte e pela cultura de perto. Escolha seu destino e faça parte dessa experiência
+                única.</p>
+            <a href="#" class="btn-explorar">Explorar Destinos &rarr;</a>
+        </div>
+        <div class="hero-image">
+            <img src="Arena MRV.webp" alt="Arena MRV">
+        </div>
+
+        <div class="info-bar">
+            <div class="info-item">
+                <i class="fa-solid fa-ticket"></i>
+                <div>
+                    <strong>Ingressos Garantidos</strong>
+                    <p>Compre online e garanta sua visita.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-landmark"></i>
+                <div>
+                    <strong>Museus e Histórias</strong>
+                    <p>Explore a cultura e os legados.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <strong>Tours Exclusivos</strong>
+                    <p>Visitas guiadas aos bastidores.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                    <strong>Compra Segura</strong>
+                    <p>Seus dados e pagamentos protegidos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="main-content">
+        <section class="featured">
+            <div class="section-header">
+                <h2>Estádios em Destaque</h2>
+                <a href="#" class="btn-ver-todos" id="ver-todos">Ver todos</a>
+            </div>
+
+            <div class="cards-grid">
+                <article class="card">
+                    <div class="card-img">
+                        <img src="allianz arena.avif" alt="Allianz Arena">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Allianz Arena</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> München, Alemanha</p>
+                        <div class="tags">
+                            <span>Estádio</span><span>Museu</span><span>Tour</span>
+                        </div>
+                        <p class="description">Visite o museu do Bayern e conheça os bastidores.</p>
+                        <div class="price">
+                            <p>A partir de <strong>€ 28</strong></p>
+                        </div>
+                        <button class="btn-card">Ver Detalhes</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img">
+                        <img src="wembley.avif" alt="Wembley">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Wembley Stadium</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Londres, Inglaterra</p>
+                        <div class="tags">
+                            <span>Estádio</span><span>Museu</span><span>Tour</span>
+                        </div>
+                        <p class="description">Tour completo pelo estádio e sua história épica.</p>
+                        <div class="price">
+                            <p>A partir de <strong>£ 30</strong></p>
+                        </div>
+                        <button class="btn-card">Ver Detalhes</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <aside class="pesquisa">
+            <h3>Reserve seu ingresso aqui!</h3>
+            <div class="input-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar estádio ou cidade">
+            </div>
+            <div class="input-container">
+                <select>
+                    <option value="">Tipo de visita</option>
+                    <option value="tour">Tour Guiado</option>
+                    <option value="jogo">Dia de Jogo</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <input type="date">
+            </div>
+            <div class="input-container">
+                <select>
+                    <option value="">Quantidade de ingressos</option>
+                    <option value="1">1 Ingresso</option>
+                    <option value="2">2 Ingressos</option>
+                </select>
+            </div>
+            <button class="btn-search">BUSCAR INGRESSOS</button>
+        </aside>
+    </main>
+
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Sobre o Arena<span>Pass</span></h2>
+                <p>Conectamos fãs de todo o mundo aos lugares mais icônicos do esporte e da cultura. Oferecemos acesso
+                    facilitado a estádios históricos e museus que guardam legados inesquecíveis.</p>
+                <a href="#" class="btn-saiba">Saiba mais sobre nós &rarr;</a>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <i class="fa-solid fa-globe"></i>
+                    <strong>500+</strong>
+                    <span>Destinos</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-futbol"></i>
+                    <strong>100+</strong>
+                    <span>Estádios</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-landmark-dome"></i>
+                    <strong>50+</strong>
+                    <span>Museus</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <strong><i class="fa-solid fa-ticket-simple"></i> Arena<span>Pass</span></strong>
+                </div>
+            </div>
+            <nav class="footer-links">
+                <a href="#">Início</a>
+                <a href="#">Estádios</a>
+                <a href="#">Museus</a>
+                <a href="#">Ingressos</a>
+                <a href="#">Sobre</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ArenaPass. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
