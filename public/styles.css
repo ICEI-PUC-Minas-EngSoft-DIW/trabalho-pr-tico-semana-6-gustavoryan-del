@@ -21,9 +21,6 @@ body {
 
 /* --- HEADER --- */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 15px 5%;
     border-bottom: 1px solid #f0f0f0;
 }
@@ -32,26 +29,23 @@ header {
     color: var(--teal);
 }
 
-.logo strong{
-font-weight: 800;
-font-size: x-large;
+.logo strong {
+    font-weight: 700;
+    font-size: x-large;
 }
 
 .nav-bar ul {
-    display: flex;
     list-style: none;
-    gap: 40px;
-    align-items: center;
 }
 
 .nav-bar a {
     text-decoration: none;
     color: var(--azul-escuro);
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 600;
 }
 
-.nav-bar :hover{
+.nav-bar :hover {
     color: #15BDBC;
 }
 
@@ -62,8 +56,6 @@ font-size: x-large;
 }
 
 .perfil-usuario {
-    display: flex;
-    gap: 15px;
     font-size: 20px;
 }
 
@@ -71,8 +63,6 @@ font-size: x-large;
 .hero {
     position: relative;
     padding: 60px 5% 100px 5%;
-    display: flex;
-    align-items: center;
     min-height: 500px;
 }
 
@@ -128,18 +118,10 @@ font-size: x-large;
     left: 5%;
     right: 5%;
     background: #f2fafd;
-    display: flex;
-    justify-content: space-around;
     padding: 25px;
     border-radius: 10px;
     border: 1px solid #eee;
     z-index: 20;
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
 }
 
 .info-item i {
@@ -160,19 +142,10 @@ font-size: x-large;
 /* --- CONTEÚDO PRINCIPAL --- */
 
 .main-content {
-    display: flex;
     padding: 120px 5% 80px 5%;
-    gap: 30px;
-}
-
-.featured {
-    flex: 2.5;
 }
 
 .section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -184,12 +157,6 @@ font-size: x-large;
 }
 
 /* CARDS */
-.cards-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
 .card {
     border: 1px solid #eee;
     border-radius: 10px;
@@ -197,6 +164,9 @@ font-size: x-large;
 }
 
 .card-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
     position: relative;
 }
 
@@ -266,7 +236,6 @@ font-size: x-large;
 /* --- PESQUISA --- */
 
 .pesquisa {
-    flex: 1;
     background: var(--azul-escuro);
     padding: 25px;
     border-radius: 12px;
@@ -325,17 +294,6 @@ font-size: x-large;
     border-top: 1px solid #eee;
 }
 
-.about-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-}
-
-.about-text {
-    flex: 1.5;
-}
-
 .about-text h2 {
     font-size: 28px;
     margin-bottom: 20px;
@@ -360,9 +318,6 @@ font-size: x-large;
 }
 
 .about-stats {
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
     text-align: center;
 }
 
@@ -393,16 +348,8 @@ font-size: x-large;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-bottom: 30px;
     border-bottom: 1px solid #ddd;
-}
-
-.footer-links {
-    display: flex;
-    gap: 20px;
 }
 
 .footer-links a {
@@ -410,11 +357,6 @@ font-size: x-large;
     color: var(--azul-escuro);
     font-size: 13px;
     font-weight: 600;
-}
-
-.footer-social {
-    display: flex;
-    gap: 15px;
 }
 
 .footer-social a {
@@ -427,99 +369,4 @@ font-size: x-large;
     text-align: center;
     font-size: 12px;
     color: var(--cinza-texto);
-}
-
-/* --- RESPONSIVIDADE --- */
-
-@media (max-width: 800px) {
-    header {
-        flex-direction: column;
-        padding: 10px 2%;
-        gap: 10px;
-    }
-
-    .nav-bar ul {
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-bar a {
-        font-size: 12px;
-    }
-
-    .perfil-usuario {
-        margin-top: 10px;
-    }
-
-    /* HERO */
-    .hero {
-        padding: 40px 5%;
-        min-height: auto;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-text {
-        max-width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero-image {
-        position: relative; 
-        width: 100%;
-        height: 250px;
-        margin-top: 20px;
-    }
-
-    .hero-image img {
-        mask-image: none; 
-        -webkit-mask-image: none;
-        border-radius: 12px;
-    }
-
-    /* INFO BAR: Transforma os itens em blocos empilhados */
-    .info-bar {
-        position: static; 
-        flex-direction: column;
-        gap: 20px;
-        margin: 20px 5%;
-    }
-
-    /* CONTEÚDO PRINCIPAL */
-    .main-content {
-        flex-direction: column;
-        padding: 40px 5%;
-    }
-
-    .cards-grid {
-        grid-template-columns: 1fr; 
-    }
-
-    /* PESQUISA */
-    .pesquisa {
-        width: 100%;
-    }
-
-    /* STATS*/
-    .about-stats {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    /* FOOTER */
-    .footer-content {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-    }
 }

@@ -8,34 +8,37 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <header>
+    <header class="container-fluid d-flex justify-content-between align-items-center">
         <div class="logo">
-            <strong><i class="fa-solid fa-ticket-simple"></i> Arena<span>Pass</span></strong>
+            <strong><i class="fa-solid fa-ticket-simple text-md-wrap"></i> Arena<span>Pass</span></strong>
         </div>
         <nav class="nav-bar">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Estádios</a></li>
-                <li><a href="#">Museus</a></li>
-                <li><a href="#">Ingressos</a></li>
-                <li><a href="#" class="btn-meus-ingressos">Meus Ingressos</a></li>
-            </ul>
+            <div class=" ">
+                <ul class="d-flex flex-column flex-md-row gap-3 gap-md-4 mb-0">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Estádios</a></li>
+                    <li><a href="#">Museus</a></li>
+                    <li><a href="#">Ingressos</a></li>
+                    <li><a href="#" class="btn-meus-ingressos">Meus Ingressos</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="perfil-usuario">
+        <div class="perfil-usuario d-flex gap-3 ">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-globe d-sm-flex d-none"></i>
             <i class="fa-solid fa-circle-user"></i>
         </div>
     </header>
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Grandes lugares<br>Histórias inesquecíveis</h1>
-            <p>Ingressos para estádios icônicos, museus impressionantes e tours exclusivos pelo mundo.</p>
+    <section class="hero container-fluid">
+        <div class="hero-text p-4 m-4">
+            <h1 class="fw-bolder">Grandes lugares<br>Histórias inesquecíveis</h1>
+            <p class="fs-6">Ingressos para estádios icônicos, museus impressionantes e tours exclusivos pelo mundo.</p>
             <p>Viva a paixão pelo esporte e pela cultura de perto. Escolha seu destino e faça parte dessa experiência
                 única.</p>
             <a href="#" class="btn-explorar">Explorar Destinos &rarr;</a>
@@ -44,46 +47,48 @@
             <img src="Arena MRV.webp" alt="Arena MRV">
         </div>
 
-        <div class="info-bar">
-            <div class="info-item">
-                <i class="fa-solid fa-ticket"></i>
-                <div>
-                    <strong>Ingressos Garantidos</strong>
-                    <p>Compre online e garanta sua visita.</p>
+        <div class="info-bar container-xxxl">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="info-item">
+                    <i class="fa-solid fa-ticket"></i>
+                    <div>
+                        <strong>Ingressos Garantidos</strong>
+                        <p>Compre online e garanta sua visita.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="info-item">
-                <i class="fa-solid fa-landmark"></i>
-                <div>
-                    <strong>Museus e Histórias</strong>
-                    <p>Explore a cultura e os legados.</p>
+                <div class="info-item">
+                    <i class="fa-solid fa-landmark"></i>
+                    <div>
+                        <strong>Museus e Histórias</strong>
+                        <p>Explore a cultura e os legados.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="info-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <div>
-                    <strong>Tours Exclusivos</strong>
-                    <p>Visitas guiadas aos bastidores.</p>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Tours Exclusivos</strong>
+                        <p>Visitas guiadas aos bastidores.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="info-item">
-                <i class="fa-solid fa-shield-halved"></i>
-                <div>
-                    <strong>Compra Segura</strong>
-                    <p>Seus dados e pagamentos protegidos.</p>
+                <div class="info-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <strong>Compra Segura</strong>
+                        <p>Seus dados e pagamentos protegidos.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <main class="main-content">
+    <main class="main-content container-fluid ">
         <section class="featured">
             <div class="section-header">
                 <h2>Estádios em Destaque</h2>
-                <a href="#" class="btn-ver-todos" id="ver-todos">Ver todos</a>
+                <a href="#" class="btn-ver-todos fs-5" id="ver-todos">Ver todos</a>
             </div>
 
-            <div class="cards-grid">
-                <article class="card">
+            <div class="cards-grid row d-flex justify-content-around">
+                <article class="card col-12 col-md-3  ">
                     <div class="card-img">
                         <img src="allianz arena.avif" alt="Allianz Arena">
                         <i class="fa-regular fa-heart heart-icon"></i>
@@ -102,7 +107,7 @@
                     </div>
                 </article>
 
-                <article class="card">
+                <article class="card mt-3 col-12 col-md-3 m-2">
                     <div class="card-img">
                         <img src="wembley.avif" alt="Wembley">
                         <i class="fa-regular fa-heart heart-icon"></i>
@@ -120,36 +125,36 @@
                         <button class="btn-card">Ver Detalhes</button>
                     </div>
                 </article>
+                <aside class="pesquisa col-12 col-md-3 m-3  ">
+                    <h3>Reserve seu ingresso aqui!</h3>
+                    <div class="input-container">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Buscar estádio ou cidade">
+                    </div>
+                    <div class="input-container">
+                        <select>
+                            <option value="">Tipo de visita</option>
+                            <option value="tour">Tour Guiado</option>
+                            <option value="jogo">Dia de Jogo</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <input type="date">
+                    </div>
+                    <div class="input-container">
+                        <select>
+                            <option value="">Quantidade de ingressos</option>
+                            <option value="1">1 Ingresso</option>
+                            <option value="2">2 Ingressos</option>
+                        </select>
+                    </div>
+                    <button class="btn-search">BUSCAR INGRESSOS</button>
+                </aside>
             </div>
         </section>
-        <aside class="pesquisa">
-            <h3>Reserve seu ingresso aqui!</h3>
-            <div class="input-container">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Buscar estádio ou cidade">
-            </div>
-            <div class="input-container">
-                <select>
-                    <option value="">Tipo de visita</option>
-                    <option value="tour">Tour Guiado</option>
-                    <option value="jogo">Dia de Jogo</option>
-                </select>
-            </div>
-            <div class="input-container">
-                <input type="date">
-            </div>
-            <div class="input-container">
-                <select>
-                    <option value="">Quantidade de ingressos</option>
-                    <option value="1">1 Ingresso</option>
-                    <option value="2">2 Ingressos</option>
-                </select>
-            </div>
-            <button class="btn-search">BUSCAR INGRESSOS</button>
-        </aside>
     </main>
 
-    <section class="about-section">
+    <section class="about-section container-fluid">
         <div class="about-container">
             <div class="about-text">
                 <h2>Sobre o Arena<span>Pass</span></h2>
@@ -157,7 +162,7 @@
                     facilitado a estádios históricos e museus que guardam legados inesquecíveis.</p>
                 <a href="#" class="btn-saiba">Saiba mais sobre nós &rarr;</a>
             </div>
-            <div class="about-stats">
+            <div class="about-stats d-flex justify-content-evenly align-items-center mt-5">
                 <div class="stat-item">
                     <i class="fa-solid fa-globe"></i>
                     <strong>500+</strong>
@@ -200,6 +205,9 @@
             <p>&copy; 2026 ArenaPass. Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
