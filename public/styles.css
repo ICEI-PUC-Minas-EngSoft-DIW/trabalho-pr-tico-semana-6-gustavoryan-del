@@ -32,6 +32,7 @@ header {
 .logo strong {
     font-weight: 700;
     font-size: x-large;
+    color: var(--azul-escuro);
 }
 
 .nav-bar ul {
@@ -76,6 +77,7 @@ header {
     font-size: 40px;
     margin-bottom: 15px;
     line-height: 1.1;
+    color: var(--azul-escuro)
 }
 
 .hero p {
@@ -147,6 +149,7 @@ header {
 
 .section-header {
     margin-bottom: 30px;
+    margin-left: 50px;
 }
 
 .btn-ver-todos {
@@ -241,6 +244,7 @@ header {
     border-radius: 12px;
     color: white;
     height: fit-content;
+    margin-top: 95%;
 }
 
 .pesquisa h3 {
@@ -309,6 +313,10 @@ header {
     line-height: 1.6;
 }
 
+.about-text{
+    margin-left: 50px;
+}
+
 .btn-saiba {
     text-decoration: none;
     color: var(--azul-escuro);
@@ -319,6 +327,7 @@ header {
 
 .about-stats {
     text-align: center;
+    margin-right: 10%;
 }
 
 .stat-item i {
